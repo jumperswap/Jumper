@@ -1,11 +1,651 @@
-import { Widget, WidgetConfig } from "@rango-dev/widget-embedded";
-
-export default function App() {
+<div id="rango-widget-container"></div>
+<script src="https://api.rango.exchange/widget/iframe.bundle.min.js"></script>
+<script defer type="text/javascript">
 
   const config = {
-    
-                     
-                    
+    from: {
+        blockchains: [
+            'TON'
+        ],
+        tokens: {
+            TON: {
+                isExcluded: false,
+                tokens: [
+                    {
+                        symbol: 'NEO',
+                        blockchain: 'TON',
+                        address: 'EQATpT6zc9MrWnkjijj9rF0fyRT51WxsXAeBk9AQN2eRk4Nv'
+                    },
+                    {
+                        symbol: 'NOT',
+                        blockchain: 'TON',
+                        address: 'EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT'
+                    },
+                    {
+                        symbol: 'DRIFT',
+                        blockchain: 'TON',
+                        address: 'EQAhRC_oZ4B9VgMltfNkENSdLktlMADPE73zIiIcL6es2o7-'
+                    },
+                    {
+                        symbol: 'TRIBE',
+                        blockchain: 'TON',
+                        address: 'EQCcXKwYGCCZnzQj9vwwg8Y-F3d8H7cow-Mwgj8pTFruBfP8'
+                    },
+                    {
+                        symbol: 'UXLINK',
+                        blockchain: 'TON',
+                        address: 'EQBh9XACT0B60U8Q48VnjyqCxzxpM4oA0c8rqKt4h70yk1V5'
+                    },
+                    {
+                        symbol: 'GOMINING',
+                        blockchain: 'TON',
+                        address: 'EQD0laik0FgHV8aNfRhebi8GDG2rpDyKGXem0MBfya_Ew1-8'
+                    },
+                    {
+                        symbol: 'HMSTR',
+                        blockchain: 'TON',
+                        address: 'EQAJ8uWd7EBqsmpSWaRdf_I-8R8-XHwh3gsNKhy-UrdrPcUo'
+                    },
+                    {
+                        symbol: 'PONKE',
+                        blockchain: 'TON',
+                        address: 'EQC8XkUEWb6bzbzE9eVaASoKUCyYA_CUQALGE15jWInEqla6'
+                    },
+                    {
+                        symbol: 'PIXEL',
+                        blockchain: 'TON',
+                        address: 'EQCgFCvZCV6qqB-2Kel6D_kV4zEW4FFOQfYV4KDDNTEJdItn'
+                    },
+                    {
+                        symbol: 'AGLD',
+                        blockchain: 'TON',
+                        address: 'EQByVysfErmFFWpaCXIHU68SF0v6O0g59KWhrqxeBPDyjEQ_'
+                    },
+                    {
+                        symbol: 'TRB',
+                        blockchain: 'TON',
+                        address: 'EQAGmoDyXkjFXu_sdtRY6QVhFsDTxoXRDIuJJ2HHoh0nl4W5'
+                    },
+                    {
+                        symbol: 'GPU',
+                        blockchain: 'TON',
+                        address: 'EQCILWMtTu_ShFu0WPZnZx9SfCX70dTypBESubKMZUPQOd53'
+                    },
+                    {
+                        symbol: 'ANT',
+                        blockchain: 'TON',
+                        address: 'EQCcNzeWKqwYJb1T-aIULoz0xCgCdBu3SojcvVATM-jVNBAZ'
+                    },
+                    {
+                        symbol: 'HIPPO',
+                        blockchain: 'TON',
+                        address: 'EQD8_ro5tJDyWm0avPITefZ-9ZkzQ9GRvAaKWLX1SkDKTGUt'
+                    },
+                    {
+                        symbol: 'LON',
+                        blockchain: 'TON',
+                        address: 'EQAZoo9I2LxapciXQQ3D4RJ0JGoCaOE5DUUQdIzIg_Xymtoq'
+                    },
+                    {
+                        symbol: 'LKY',
+                        blockchain: 'TON',
+                        address: 'EQCyDhcASwIm8-eVVTzMEESYAeQ7ettasfuGXUG1tkDwVJbc'
+                    },
+                    {
+                        symbol: 'TONIC',
+                        blockchain: 'TON',
+                        address: 'EQC4D-qkAaqYXWOnWRJx6xtOhd7Fa9zZQdob8iWD6mS_kPqU'
+                    },
+                    {
+                        symbol: 'BST',
+                        blockchain: 'TON',
+                        address: 'EQCZkJnhQmcmbAxfzLcfvt6OusqMSYJg-gpy8cI81SjgN9Os'
+                    },
+                    {
+                        symbol: 'DFC',
+                        blockchain: 'TON',
+                        address: 'EQD26zcd6Cqpz7WyLKVH8x_cD6D7tBrom6hKcycv8L8hV0GP'
+                    },
+                    {
+                        symbol: 'NIKO',
+                        blockchain: 'TON',
+                        address: 'EQDo8QC6mVi7Gq6uGWDF4XVp3cZ4wKZ-bqKBkmhVMPm-1ojm'
+                    },
+                    {
+                        symbol: 'GG',
+                        blockchain: 'TON',
+                        address: 'EQAtyIuO-2x0bp_imQhyOHVT5-Xx8K8tdqsGkED-BME9urj_'
+                    },
+                    {
+                        symbol: 'ALL',
+                        blockchain: 'TON',
+                        address: 'EQDlnVo-6abJzyHlU8uB7pRjE7OIKt4HTTDPG4hfwOf5jTPg'
+                    },
+                    {
+                        symbol: 'STORM',
+                        blockchain: 'TON',
+                        address: 'EQBsosmcZrD6FHijA7qWGLw5wo_aH8UN435hi935jJ_STORM'
+                    },
+                    {
+                        symbol: 'WSDM',
+                        blockchain: 'TON',
+                        address: 'EQAXFnF_CGPIXD5B56C-XPEyTAJiN4C1hI0-JjG5Suc6wzDA'
+                    },
+                    {
+                        symbol: 'JETTON',
+                        blockchain: 'TON',
+                        address: 'EQANARUwOrJR3whiESWVuQTnKjm7EoUKcO1DQkRkRzUj6nib'
+                    },
+                    {
+                        symbol: 'JETTON',
+                        blockchain: 'TON',
+                        address: 'EQAQXlWJvGbbFfE8F3oS8s87lIgdovS455IsWFaRdmJetTon'
+                    },
+                    {
+                        symbol: 'LFGO',
+                        blockchain: 'TON',
+                        address: 'EQCPju-9JN0fK4BToOvA6aPdByR5CmyrNGqeMhuRz35ZE8C1'
+                    },
+                    {
+                        symbol: 'SQRL',
+                        blockchain: 'TON',
+                        address: 'EQAu8oDM_dXMgQd1COjRnU6sYhmvm5RP32gyyL9R2Rv-8s70'
+                    },
+                    {
+                        symbol: 'FWT',
+                        blockchain: 'TON',
+                        address: 'EQCh9DUkmEdz7BuM_kv_iDqXeXWHrMUZHcZfXnr8yBAfPHcn'
+                    },
+                    {
+                        symbol: 'LRT',
+                        blockchain: 'TON',
+                        address: 'EQAJ29WkjjLqu-ucmAj9A0rRm86U6OvNRz46iqd1XVy8Pryq'
+                    },
+                    {
+                        symbol: 'SAKE',
+                        blockchain: 'TON',
+                        address: 'EQCIIUm7dnBgmcrubDfFLZV52oe1F_HFdDZiMfer9riphpQo'
+                    },
+                    {
+                        symbol: 'TRUST',
+                        blockchain: 'TON',
+                        address: 'EQC5fAP56z6iyTg1idj_mV1VBofi2KwJ1Hf8m2P0HphDgE10'
+                    },
+                    {
+                        symbol: 'SAINT',
+                        blockchain: 'TON',
+                        address: 'EQD7rlGEfvNUXYbEwT-Ll7SUD7LuGkubUeU-TQXsShMwXY0H'
+                    },
+                    {
+                        symbol: 'FLIP',
+                        blockchain: 'TON',
+                        address: 'EQAcSYrcJrqeOtw6CmK1_kkTx7YsP6Or8pvGBQrAFYZbCQxQ'
+                    },
+                    {
+                        symbol: 'REDO',
+                        blockchain: 'TON',
+                        address: 'EQBZ_cafPyDr5KUTs0aNxh0ZTDhkpEZONmLJA2SNGlLm4Cko'
+                    },
+                    {
+                        symbol: 'MAJOR',
+                        blockchain: 'TON',
+                        address: 'EQCuPm01HldiduQ55xaBF_1kaW_WAUy5DHey8suqzU_MAJOR'
+                    },
+                    {
+                        symbol: 'SOON',
+                        blockchain: 'TON',
+                        address: 'EQCwe0g3cEFhsz4VK5nrtOZBkFeSISxhCVUqvON7Im__SOON'
+                    },
+                    {
+                        symbol: 'GODL',
+                        blockchain: 'TON',
+                        address: 'EQAZwJdXCZoO9JIbwBTL2a_zzOAPheLICa4YG7lNIlDZzMmx'
+                    },
+                    {
+                        symbol: 'RC',
+                        blockchain: 'TON',
+                        address: 'EQDqvdTKpRROsk1_iI-8Fxx1u7W54jRumGzgn0jQoJSY1bqX'
+                    },
+                    {
+                        symbol: 'SQD',
+                        blockchain: 'TON',
+                        address: 'EQCtxbfa9bVXn7wsfK5V72fX1RFuc8kFDF7piMioWENgEBx5'
+                    },
+                    {
+                        symbol: 'FTON',
+                        blockchain: 'TON',
+                        address: 'EQDCBwiUEeeBLHhqIW161yObGvO7_BqZeD3XR5E2y_fwfiMG'
+                    },
+                    {
+                        symbol: 'MONK',
+                        blockchain: 'TON',
+                        address: 'EQCu9qafFYH1tbvBCsVg6QQwPbLinzQ27HKkr0Tb4WSobXI-'
+                    },
+                    {
+                        symbol: 'TOON',
+                        blockchain: 'TON',
+                        address: 'EQAO3n9xmdXwXHUhtZ3zKexpeUEKejYVKCeEupdsg2kvgcof'
+                    },
+                    {
+                        symbol: 'PONCH',
+                        blockchain: 'TON',
+                        address: 'EQAkG89bnBfKwsUp8ZzqCJM-DeKxwowl_M7uRan7tbMlMGOJ'
+                    },
+                    {
+                        symbol: 'MMT',
+                        blockchain: 'TON',
+                        address: 'EQCyfdVbfwkcBfBSn57GRnMY_BRO4vYG7HnkWngH41FLM-5Y'
+                    },
+                    {
+                        symbol: 'ARBUZ',
+                        blockchain: 'TON',
+                        address: 'EQAM2KWDp9lN0YvxvfSbI0ryjBXwM70rakpNIHbuETatRWA1'
+                    },
+                    {
+                        symbol: 'SHIT',
+                        blockchain: 'TON',
+                        address: 'EQB4gPfG0YtoiJHCMTUuzxP9fKXy9nx6TFh-dcAltrnNpLNo'
+                    },
+                    {
+                        symbol: 'DUST',
+                        blockchain: 'TON',
+                        address: 'EQBlqsm144Dq6SjbPI4jjZvA1hqTIP3CvHovbIfW_t-SCALE'
+                    },
+                    {
+                        symbol: 'GRAM',
+                        blockchain: 'TON',
+                        address: 'EQC47093oX5Xhb0xuk2lCr2RhS8rj-vul61u4W2UH5ORmG_O'
+                    },
+                    {
+                        symbol: 'SCAR',
+                        blockchain: 'TON',
+                        address: 'EQDbiql2Kr9tHTfeDRmr5sOHjNXFkhpm3pkwq6NrmOnIinlU'
+                    },
+                    {
+                        symbol: 'WUF',
+                        blockchain: 'TON',
+                        address: 'EQBh4srSjynQxa1XkZPQZcNDGS1BuWURtIQsomqYd2vX7oll'
+                    },
+                    {
+                        symbol: 'FREE',
+                        blockchain: 'TON',
+                        address: 'EQBhj9Fwtr0ZwftDF13f6d1aqh5Cegdqit8BCTwbjL71KN3Z'
+                    },
+                    {
+                        symbol: 'REKT',
+                        blockchain: 'TON',
+                        address: 'EQDQEsrlf5ALa7-Gpz2nDK6t332bcyQoP0BzHj2KKTrXYVYB'
+                    },
+                    {
+                        symbol: 'XCM',
+                        blockchain: 'TON',
+                        address: 'EQD7THgw9GZ7udZzjzwiBXMHEKSCHiElKEHjn_-lcXoGApel'
+                    },
+                    {
+                        symbol: 'SP',
+                        blockchain: 'TON',
+                        address: 'EQACLXDwit01stiqK9FvYiJo15luVzfD5zU8uwDSq6JXxbP8'
+                    },
+                    {
+                        symbol: 'XROCK',
+                        blockchain: 'TON',
+                        address: 'EQAVfEY2iKSpEkUhgFLFWAgHeSz2NH2XV-MvDuiKF5plSbsU'
+                    },
+                    {
+                        symbol: 'HYDRA',
+                        blockchain: 'TON',
+                        address: 'EQD4P32U10snNoIavoq6cYPTQR82ewAjO20epigrWRAup54_'
+                    },
+                    {
+                        symbol: 'TON',
+                        blockchain: 'TON',
+                        address: null
+                    },
+                    {
+                        symbol: 'ALT',
+                        blockchain: 'TON',
+                        address: 'EQDs4_MWmRySmPbsW6MyZ8Dy-k-Bi0vZNNSVt6LE2LC_ddUP'
+                    },
+                    {
+                        symbol: 'BURN',
+                        blockchain: 'TON',
+                        address: 'EQDNJzbNKA8Ix2X7Tv1_jxdCqehPQgJaNbisoIkSq5srnfLs'
+                    },
+                    {
+                        symbol: 'CHILL',
+                        blockchain: 'TON',
+                        address: 'EQA8Ik_xEjnjhy7CrMMsaRmJRD7cV0VUeke7gtjNZkRhD2yP'
+                    },
+                    {
+                        symbol: 'AIC',
+                        blockchain: 'TON',
+                        address: 'EQBIzvHeNGl1CCALgCa_iC-OiK_4lFhs_TBKtRNjP6fi0024'
+                    },
+                    {
+                        symbol: 'OPEN',
+                        blockchain: 'TON',
+                        address: 'EQB0apV-NyCYJDVwSBoDL86Xjp0OiwcyD8jJ0J5BVWnnDJu7'
+                    },
+                    {
+                        symbol: 'OPEN',
+                        blockchain: 'TON',
+                        address: 'EQDf84FT8tdHZeI2-LXdb8gPMRqHRSABrmi8jI7MzvVpGJKZ'
+                    },
+                    {
+                        symbol: 'LIBRA',
+                        blockchain: 'TON',
+                        address: 'EQB38MI_M1NZoFrjxO_rTFFFSvDLD5iKF-1j1DVeSVyPwqGE'
+                    },
+                    {
+                        symbol: 'GATO',
+                        blockchain: 'TON',
+                        address: 'EQDWuR1l5EbiGPf2_7VK0davJ6bkXwi4STx8VfaMqrJkd0tm'
+                    },
+                    {
+                        symbol: 'BEN',
+                        blockchain: 'TON',
+                        address: 'EQAik8dthQ2NheRlkvnCRJPuDcmGmitTeZEL9dNkKfQyffjo'
+                    },
+                    {
+                        symbol: 'UP',
+                        blockchain: 'TON',
+                        address: 'EQCvaf0JMrv6BOvPpAgee08uQM_uRpUd__fhA7Nm8twzvbE_'
+                    },
+                    {
+                        symbol: 'KONG',
+                        blockchain: 'TON',
+                        address: 'EQDjOH3noUJVCXLSBxCh2agnh4OELDvoGBXwUNTxzZpaEWH4'
+                    },
+                    {
+                        symbol: 'PIG',
+                        blockchain: 'TON',
+                        address: 'EQD07JX7TEXAU24Fofg1dyWjYz_i2vl9Jj8lmhwbB5be_EMj'
+                    },
+                    {
+                        symbol: 'MELON',
+                        blockchain: 'TON',
+                        address: 'EQDeXL9S-ApGesQUbBLYi2RGS9UpWfABGAF8jEDh_6XQjOR6'
+                    },
+                    {
+                        symbol: 'PUN',
+                        blockchain: 'TON',
+                        address: 'EQAhPcpyfkhv2MPUxYm37g-NjZpBrp-hO-XEpOVkgOLAE2hS'
+                    },
+                    {
+                        symbol: 'CES',
+                        blockchain: 'TON',
+                        address: 'EQCl0S4xvoeGeFGijTzicSA8j6GiiugmJW5zxQbZTUntre-1'
+                    },
+                    {
+                        symbol: 'HEDGE',
+                        blockchain: 'TON',
+                        address: 'EQBiJ8dSbp3_YAb_KuC64zCrFqQTsFbUee5tbzr5el_HEDGE'
+                    },
+                    {
+                        symbol: 'PUMP',
+                        blockchain: 'TON',
+                        address: 'EQCR03q7xmvx5bYPsZKrkSRJ23W-MpVl_FNP1W5rhqrxXrpP'
+                    },
+                    {
+                        symbol: 'TRUMP3',
+                        blockchain: 'TON',
+                        address: 'EQAlXsX5yXFtTPOSLEBCcdrWtyZvC48nBRrjyCcuCOgHyFFS'
+                    },
+                    {
+                        symbol: 'PRO',
+                        blockchain: 'TON',
+                        address: 'EQBVJDGFlOrF3WBTLeJh2XOSy-cfV2B0ZZMmX1hBNRTOswIU'
+                    },
+                    {
+                        symbol: 'PLANE',
+                        blockchain: 'TON',
+                        address: 'EQAX9J60va-0wIDMdqGLRMf7imJvG0Ytyi3Yxnq9y-nbNCq2'
+                    },
+                    {
+                        symbol: 'MK',
+                        blockchain: 'TON',
+                        address: 'EQA4-dwC_PyhZZkgoCDtMvaIIGPUXuOZFsH6q4N9xbaWFXvD'
+                    },
+                    {
+                        symbol: 'TONNEL',
+                        blockchain: 'TON',
+                        address: 'EQDNDv54v_TEU5t26rFykylsdPQsv5nsSZaH_v7JSJPtMitv'
+                    },
+                    {
+                        symbol: 'REGI',
+                        blockchain: 'TON',
+                        address: 'EQCcYUWKhjGxwqtk_je9LW2V4RoFmbhOUR9e404Y6FQTEXHh'
+                    },
+                    {
+                        symbol: 'HIF',
+                        blockchain: 'TON',
+                        address: 'EQCLWvCj44QYTeLujnCYKH7DoAuk_O7QI-LnAt3X5bOfNFMy'
+                    },
+                    {
+                        symbol: 'GOBLIN',
+                        blockchain: 'TON',
+                        address: 'EQBfMGkJtSWA4VZspN0zC9iedpK60HwPAIEWaPJaIWgf_pnV'
+                    },
+                    {
+                        symbol: 'COM',
+                        blockchain: 'TON',
+                        address: 'EQALmibEKo04Am03PrhDsRp_5yArjGxrxX6ZDEwS3NfQ9eft'
+                    },
+                    {
+                        symbol: 'GRIMACE',
+                        blockchain: 'TON',
+                        address: 'EQDODkpfxZ4joe3RxBckjgvCCQH-TXxozbNwTOoCUoOMCfX8'
+                    },
+                    {
+                        symbol: 'JVT',
+                        blockchain: 'TON',
+                        address: 'EQC8FoZMlBcZhZ6Pr9sHGyHzkFv9y2B5X9tN61RvucLRzFZz'
+                    },
+                    {
+                        symbol: 'GROK',
+                        blockchain: 'TON',
+                        address: 'EQA2IyKaO7fKV37GxQGbRY_yZdE47ZdQXbOnX55OWhCwbL6H'
+                    },
+                    {
+                        symbol: 'BOLT',
+                        blockchain: 'TON',
+                        address: 'EQD0vdSA_NedR9uvbgN9EikRX-suesDxGeFg69XQMavfLqIw'
+                    },
+                    {
+                        symbol: 'FNZ',
+                        blockchain: 'TON',
+                        address: 'EQDCJL0iQHofcBBvFBHdVG233Ri2V4kCNFgfRT-gqAd3Oc86'
+                    },
+                    {
+                        symbol: 'ZEUS',
+                        blockchain: 'TON',
+                        address: 'EQCTUG05xJSNRFhAza1M9UjKkXqawGcSlxWHTCqM5F0MEWKN'
+                    },
+                    {
+                        symbol: 'GEMSTON',
+                        blockchain: 'TON',
+                        address: 'EQBX6K9aXVl3nXINCyPPL86C4ONVmQ8vK360u6dykFKXpHCa'
+                    },
+                    {
+                        symbol: 'EGG',
+                        blockchain: 'TON',
+                        address: 'EQDCAjHxgyScUPS-Am_2nAH7C5XWM4fc2X9dVyWpFgHXG2rT'
+                    },
+                    {
+                        symbol: 'KINGY',
+                        blockchain: 'TON',
+                        address: 'EQC-tdRjjoYMz3MXKW4pj95bNZgvRyWwZ23Jix3ph7guvHxJ'
+                    },
+                    {
+                        symbol: 'CATI',
+                        blockchain: 'TON',
+                        address: 'EQD-cvR0Nz6XAyRBvbhz-abTrRC6sI5tvHvvpeQraV9UAAD7'
+                    },
+                    {
+                        symbol: 'WALL',
+                        blockchain: 'TON',
+                        address: 'EQDdCha_K-Z97lKl599O0GDAt0py2ZUuons4Wuf85tq6NXIO'
+                    },
+                    {
+                        symbol: 'STL',
+                        blockchain: 'TON',
+                        address: 'EQBjMUhuZnLRu45LtJNixAmWH48IrB61qk1wVWJqZKuNdDvm'
+                    },
+                    {
+                        symbol: 'MIC',
+                        blockchain: 'TON',
+                        address: 'EQDhSXj-di6Wo6__Pqd51dHZHel0MQeaegmhCWm-tkwwtem8'
+                    },
+                    {
+                        symbol: 'HPO',
+                        blockchain: 'TON',
+                        address: 'EQDQEUr0LPi8m6D6F0Wrvuok7tZbAcr0yn2Y7hK291MMzMjM'
+                    },
+                    {
+                        symbol: 'INS',
+                        blockchain: 'TON',
+                        address: 'EQBecg3E6822M1aZOZhqzMWaSRGP712sDRkQgHO4MSgDRDHq'
+                    },
+                    {
+                        symbol: 'TONALD',
+                        blockchain: 'TON',
+                        address: 'EQCX_vSR8q0OSN74_BSq_ZieLZuNGx7wt0sXq1t5EI0q2SRI'
+                    },
+                    {
+                        symbol: 'CARAT',
+                        blockchain: 'TON',
+                        address: 'EQD5cOofGH1LpZbkqxW2iF-VCE5SzKgP1K3ABxdnx6TOg1u1'
+                    },
+                    {
+                        symbol: 'TONY',
+                        blockchain: 'TON',
+                        address: 'EQCulqkZWU3o1K6JuUYsarSZeCtbaTMsSyqRQHXSCP54MG5O'
+                    },
+                    {
+                        symbol: 'POTATO',
+                        blockchain: 'TON',
+                        address: 'EQBfl_pzi8t_fYXJEygZoz8cId1sdjnPTsBpvqiHjggXS3Ep'
+                    },
+                    {
+                        symbol: 'CATCH',
+                        blockchain: 'TON',
+                        address: 'EQD5LIYmzzDMDXPkXeO48Yqj3Y76WiLoFcMkuPz4KptPQeKy'
+                    },
+                    {
+                        symbol: 'KAKAXA',
+                        blockchain: 'TON',
+                        address: 'EQDqz7LTwgj016kiTiSooM_ft8kveL2P4pj4fkJmsUV_an_X'
+                    },
+                    {
+                        symbol: 'TOTO',
+                        blockchain: 'TON',
+                        address: 'EQDs9X4xZtBe9Z6kr8Mbmgm-yQtid4aiQl64Ra3KryGX8kOQ'
+                    },
+                    {
+                        symbol: 'MARGA',
+                        blockchain: 'TON',
+                        address: 'EQBjEw-SOe8yV2kIbGVZGrsPpLTaaoAOE87CGXI2ca4XdzXA'
+                    },
+                    {
+                        symbol: 'TIGER',
+                        blockchain: 'TON',
+                        address: 'EQCktEmAsvYBn8DPS6lu4QfatjEJJRLwD94aDqb8Ss6etuaA'
+                    },
+                    {
+                        symbol: 'BOGE',
+                        blockchain: 'TON',
+                        address: 'EQBeJxQ0mf54_wg3dSJzE6I44YorvVCHrjLSRTTkVdjL2VYj'
+                    },
+                    {
+                        symbol: 'POE',
+                        blockchain: 'TON',
+                        address: 'EQBB7RWO0qzo6JhikXLjmKJc81IS4JR0cyc5bPAL_h0GGmxW'
+                    },
+                    {
+                        symbol: 'ANON',
+                        blockchain: 'TON',
+                        address: 'EQDv-yr41_CZ2urg2gfegVfa44PDPjIK9F-MilEDKDUIhlwZ'
+                    },
+                    {
+                        symbol: 'TNX',
+                        blockchain: 'TON',
+                        address: 'EQB-ajMyi5-WKIgOHnbOGApfckUGbl6tDk3Qt8PKmb-xLAvp'
+                    },
+                    {
+                        symbol: 'DON',
+                        blockchain: 'TON',
+                        address: 'EQCQxQWU0ZgbQovVRtrHZUgSUTsj9VbViAj2XANGeC35L2aS'
+                    },
+                    {
+                        symbol: 'ICE',
+                        blockchain: 'TON',
+                        address: 'EQDWfuuDQvT8HhI_ghNrai1LOTA1XGHw14pVIPaqKAXakk_L'
+                    },
+                    {
+                        symbol: 'PIZZA',
+                        blockchain: 'TON',
+                        address: 'EQDoqIKkOevVZukmf1L8nGhcjlha4sfvgl8GIRpTj_b53HyR'
+                    },
+                    {
+                        symbol: 'TGRAM',
+                        blockchain: 'TON',
+                        address: 'EQDRlQ8en7A2zsTuF7SdDOxMlZ_wFw0E7Eow3u9c4pSoe4Tg'
+                    },
+                    {
+                        symbol: 'CHAD',
+                        blockchain: 'TON',
+                        address: 'EQDpnjfEwSJjdUufatHdopE9sZLKmD7ngXJvbixkel6zta5B'
+                    },
+                    {
+                        symbol: 'FLY',
+                        blockchain: 'TON',
+                        address: 'EQCe_XrSfg4MnL3-ro1akAEWxdfHiXMd24_XgTJhrioCek9R'
+                    },
+                    {
+                        symbol: 'HMM',
+                        blockchain: 'TON',
+                        address: 'EQDOrg1GXObvpLoQSpnGxcb5wA42-V2CcFl6Pr25sVoJVmTv'
+                    },
+                    {
+                        symbol: 'YO',
+                        blockchain: 'TON',
+                        address: 'EQCDkrpCu-FFVPQJnManjlf8XCN75wjX_AKrrEFFQ1mfJqZo'
+                    },
+                    {
+                        symbol: 'POT',
+                        blockchain: 'TON',
+                        address: 'EQDoziSttQZ96QJRxHRKdatCm5L9DRL9LKycXcjl8RPXZM0N'
+                    },
+                    {
+                        symbol: 'FISH',
+                        blockchain: 'TON',
+                        address: 'EQATcUc69sGSCCMSadsVUKdGwM1BMKS-HKCWGPk60xZGgwsK'
+                    },
+                    {
+                        symbol: 'RING',
+                        blockchain: 'TON',
+                        address: 'EQAhPUM4o8QFLoj9T6l2muUDPxF6aH3Neo0rvWZUxwbDk85t'
+                    },
+                    {
+                        symbol: 'MEH',
+                        blockchain: 'TON',
+                        address: 'EQAVw-6sK7NJepSjgH1gW60lYEkHYzSmK9pHbXstCClDY4BV'
+                    },
+                    {
+                        symbol: 'PC',
+                        blockchain: 'TON',
+                        address: 'EQAj18Ki4sG47AXb14No35FnrMNBxC2uHcuIejJDyrd6VXpQ'
+                    },
+                    {
+                        symbol: 'LOVE',
+                        blockchain: 'TON',
+                        address: 'EQAS2elYb6_hqWyOl7gpuYTzf1sqmjLJQ0lQ4X_4d_MvtMWR'
+                    },
+                    {
+                        symbol: 'BUCKY',
+                        blockchain: 'TON',
+                        address: 'EQAof8wIlCvwWV6flqnXgTl52O3oOX52pZcFHwmxuyZVfK03'
+                    },
                     {
                         symbol: 'WEB3',
                         blockchain: 'TON',
@@ -2174,38 +2814,23 @@ export default function App() {
                 secondary: '#ff3000',
                 neutral: '#201d1c',
                 background: '#201e1d',
-                foreground: '#ffffff'
+                foreground: '#f9f7f7'
             },
             light: {
                 primary: '#ff3000',
                 secondary: '#ff3000',
                 neutral: '#000000',
-                background: '#cbc6c4'
+                background: '#201e1d',
+                foreground: '#060606'
             }
         }
     },
     // This API key is only for test purpose. Don't use it in production.
-    apiKey: '03b0e42c-38c5-4ad8-bded-0425b48edf78',
-    affiliate: {
-      // The affilaite ref code you've created on step above
-      ref: 'dH6vb6',
-      // The affiliate percent you want to charge users based on input amount
-      // Setting 0.1 means 0.1% of input amount
-      percent: 0.5,
-      // If you want to change the default wallet that you want to earn reward,  
-      // you could pass your desired wallets in this property 
-      wallets: {
-        'ETH': 'your wallet',
-        'BSC': 'your wallet',
-        'POLYGON': 'your wallet',
-        // ...
-      }
+    apiKey: 'c6381a79-2817-4602-83bf-6a641a409e32',
+    tonConnect: {
+        manifestUrl: 'https://raw.githubusercontent.com/rango-exchange/assets/refs/heads/main/manifests/tonconnect/manifest.json'
     }
   }
               
-  return (
-    <div className="App">
-      <Widget config={config} />
-    </div>
-  );
-}
+  rangoWidget.init(config)
+</script>
